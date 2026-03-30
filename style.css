@@ -341,3 +341,14 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Cambiado de box-word a box-sizing */
+}
+
+img {
+    max-width: 100%; /* Evita que cualquier imagen se desborde */
+    height: auto;
+}
