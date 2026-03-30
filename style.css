@@ -318,56 +318,52 @@ footer {
     .hero { padding-top: 3rem; }
 }
 
-/* --- Mejora de Botones de Contacto --- */
-.contact-links {
+/* --- Cabecera de Contacto Lineal (Optimizado para PDF) --- */
+.contact-info-bar {
     display: flex;
     justify-content: center;
-    gap: 12px;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.btn-contact {
-    display: inline-flex;
     align-items: center;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-/* Estilo Azul Sólido (Email y Llamar) */
-.btn-contact.primary {
-    background-color: var(--accent-color);
-    color: #ffffff;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 71, 171, 0.2);
-}
-
-/* Estilo con Borde (LinkedIn y GitHub) */
-.btn-contact.secondary {
-    background-color: transparent;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
     color: var(--text-color);
-    border: 2px solid var(--border-color);
 }
 
-.btn-contact i {
-    margin-right: 8px;
+.contact-info-bar a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease;
 }
 
-/* Efectos al pasar el ratón */
-.btn-contact:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.contact-info-bar a i {
+    color: var(--accent-color); /* El icono mantiene el azul cobalto */
+    font-size: 1rem;
 }
 
-.btn-contact.primary:hover {
-    filter: brightness(1.1);
-}
-
-.btn-contact.secondary:hover {
-    border-color: var(--accent-color);
+.contact-info-bar a:hover {
     color: var(--accent-color);
+}
+
+.contact-info-bar .separator {
+    color: var(--border-color);
+    font-weight: 300;
+    user-select: none;
+}
+
+/* Estilo para el enlace de LinkedIn pendiente */
+.contact-info-bar a.disabled {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* Ajuste para la ubicación justo debajo */
+.location {
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
