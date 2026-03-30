@@ -2,7 +2,7 @@
 :root {
     --bg-color: #ffffff;
     --text-color: #333333;
-    --accent-color: #0047AB; /* Azul Cobalto */
+    --accent-color: #0047AB; 
     --secondary-bg: #f8f9fa;
     --border-color: #eeeeee;
     --transition: all 0.3s ease;
@@ -20,7 +20,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-word: border-box;
+    box-sizing: border-box; /* CORREGIDO: de box-word a box-sizing */
 }
 
 html {
@@ -101,6 +101,20 @@ body {
     font-size: 3rem;
     margin-bottom: 1rem;
     letter-spacing: -1px;
+}
+
+/* Foto de perfil limpia */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra sutil para profundidad */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none; /* Asegura que no haya borde */
 }
 
 .subtitle {
@@ -189,50 +203,6 @@ body {
     font-size: 0.8rem;
 }
 
-/* Timeline */
-.timeline {
-    border-left: 2px solid var(--border-color);
-    padding-left: 2rem;
-    position: relative;
-}
-
-.timeline-item {
-    margin-bottom: 2rem;
-    position: relative;
-}
-
-.time-dot {
-    position: absolute;
-    left: -2.45rem;
-    top: 5px;
-    width: 12px;
-    height: 12px;
-    background: var(--accent-color);
-    border-radius: 50%;
-}
-
-.company {
-    font-weight: 600;
-    color: var(--accent-color);
-    font-size: 0.9rem;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 4rem 0;
-    border-top: 1px solid var(--border-color);
-    font-size: 0.8rem;
-    opacity: 0.6;
-}
-
-/* Responsive Mobile */
-@media (max-width: 768px) {
-    .hero h1 { font-size: 2rem; }
-    .nav-links { display: none; } /* Oculto en móvil por simplicidad minimalista */
-    .hero { padding-top: 3rem; }
-}
-
 /* Projects Section */
 .projects-grid {
     display: grid;
@@ -276,7 +246,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 71, 171, 0.8); /* Azul Cobalto con transparencia */
+    background: rgba(0, 71, 171, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,27 +298,46 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Foto de perfil elegante */
-.profile-img {
-    width: 150px;
-    height: 150px;
+/* Timeline */
+.timeline {
+    border-left: 2px solid var(--border-color);
+    padding-left: 2rem;
+    position: relative;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.time-dot {
+    position: absolute;
+    left: -2.45rem;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: var(--accent-color);
     border-radius: 50%;
-    object-fit: cover; /* Mantiene la proporción del rostro */
-    border: 3px solid var(--accent-color);
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Cambiado de box-word a box-sizing */
+.company {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 0.9rem;
 }
 
-img {
-    max-width: 100%; /* Evita que cualquier imagen se desborde */
-    height: auto;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 4rem 0;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2rem; }
+    .nav-links { display: none; }
+    .hero { padding-top: 3rem; }
 }
