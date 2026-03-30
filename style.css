@@ -124,30 +124,6 @@ body {
     margin-bottom: 2rem;
 }
 
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-}
-
-.contact-links a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 0.9rem;
-    border: 1px solid var(--border-color);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: var(--transition);
-}
-
-.contact-links a:hover {
-    background: var(--accent-color);
-    color: white;
-    border-color: var(--accent-color);
-}
-
 .location {
     font-size: 0.85rem;
     opacity: 0.7;
@@ -340,4 +316,58 @@ footer {
     .hero h1 { font-size: 2rem; }
     .nav-links { display: none; }
     .hero { padding-top: 3rem; }
+}
+
+/* --- Mejora de Botones de Contacto --- */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-contact {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+/* Estilo Azul Sólido (Email y Llamar) */
+.btn-contact.primary {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 71, 171, 0.2);
+}
+
+/* Estilo con Borde (LinkedIn y GitHub) */
+.btn-contact.secondary {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+}
+
+.btn-contact i {
+    margin-right: 8px;
+}
+
+/* Efectos al pasar el ratón */
+.btn-contact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-contact.primary:hover {
+    filter: brightness(1.1);
+}
+
+.btn-contact.secondary:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
