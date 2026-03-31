@@ -269,7 +269,47 @@ footer {
 
 /* --- Regla Crítica para el PDF --- */
 @media print {
-    .btn-download, .navbar, #theme-toggle, .download-section {
-        display: none !important;
+    /* Forzamos que el contenedor ocupe el 100% sin márgenes externos */
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Reducción de espacios entre secciones y elementos */
+    .section-compact {
+        padding: 0.5rem 0 !important; /* Espaciado mínimo */
+    }
+
+    .main-grid {
+        gap: 15px !important; /* Estrecha la separación entre columnas */
+        margin-top: 0 !important;
+    }
+
+    .hero {
+        padding: 1rem 0 !important;
+    }
+
+    .profile-img {
+        width: 90px !important; /* Foto más pequeña para ganar altura */
+        height: 90px !important;
+    }
+
+    /* Ajuste de fuentes para evitar saltos de línea innecesarios */
+    body {
+        font-size: 10.5px !important;
+        line-height: 1.2 !important;
+    }
+
+    h1 { font-size: 1.8rem !important; }
+    .section-title { font-size: 0.9rem !important; }
+
+    /* Forzar que el fondo gris de la columna derecha se vea */
+    .column-side {
+        background-color: var(--secondary-bg) !important;
+        -webkit-print-color-adjust: exact; 
+        print-color-adjust: exact;
+        padding: 1rem !important;
     }
 }
