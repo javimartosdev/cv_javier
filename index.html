@@ -3,161 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javier Martos | Full Stack Developer Student</title>
+    <title>Javier Martos | Full Stack Developer </title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-content">
-            <span class="logo">JM<span>.</span></span>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#education">Formación</a></li>
-            </ul>
-            <button id="theme-toggle" aria-label="Cambiar modo">
-                <i class="fas fa-moon"></i>
-            </button>
-        </div>
-    </nav>
-
     <header class="hero container">
-    <div class="hero-text">
-        <img src="img/fotocurriculum.png" alt="Javier Martos" class="profile-img" width="150" height="150">
-        
-        <h1>Javier Martos Carrascosa</h1>
-        <p class="subtitle">Estudiante de Desarrollo de Aplicaciones Web (DAW)</p>
-        <div class="contact-info-bar">
-    <a href="mailto:javimartosdev@gmail.com">
-        <i class="fas fa-envelope"></i> javimartosdev@gmail.com
-    </a>
+        <div class="hero-text">
+            <img src="img/fotocurriculum.png" alt="Javier Martos" class="profile-img" width="120" height="120">
+            <h1>Javier Martos Carrascosa</h1>
+            <p class="subtitle">Full Stack Developer | Gerente con +15 años de experiencia</p>
+            
+            <div class="contact-info-bar">
+    <a href="mailto:javimartosdev@gmail.com"><i class="fas fa-envelope"></i> javimartosdev@gmail.com</a>
     <span class="separator">|</span>
-    <a href="tel:+34686075648">
-        <i class="fas fa-phone"></i> 686 075 648
-    </a>
+    <a href="tel:+34686075648"><i class="fas fa-phone"></i> 686 075 648</a>
     <span class="separator">|</span>
-    <a href="#" class="disabled">
-        <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
+    <span><i class="fas fa-map-marker-alt"></i> Retamar, Almería</span>
     <span class="separator">|</span>
-    <a href="https://github.com/javimartosdev" target="_blank">
-        <i class="fab fa-github"></i> GitHub
-    </a>
+    <a href="https://www.linkedin.com/in/javier-martos-carrascosa-a92b1b3bb" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <span class="separator">|</span>
+    <a href="https://github.com/javimartosdev" target="_blank"><i class="fab fa-github"></i> GitHub</a>
 </div>
+        </div>
+    </header>
 
-</header>
+    <main class="container main-grid">
+        <div class="column-main">
+            <section id="about" class="section-compact">
+                <h2 class="section-title">Perfil</h2>
+                <p>Especialista en gestión de equipos y resolución de problemas (Mercadona) en transición al desarrollo web. Fuerte base técnica en Java y PHP, con mentalidad analítica orientada a resultados.</p>
+            </section>
 
-    <main class="container">
-        <section id="about" class="section">
-            <h2 class="section-title">Sobre mí</h2>
-            <p>
-                Tras más de 15 años de trayectoria profesional asumiendo responsabilidades de gestión y liderazgo en Mercadona, he decidido canalizar mi madurez y capacidad analítica hacia el sector tecnológico. Actualmente me especializo en el desarrollo de aplicaciones web, combinando mi experiencia en resolución de problemas y trabajo en equipo con un stack técnico moderno.
-            </p>
-        </section>
-
-        <section id="skills" class="section">
-            <h2 class="section-title">Stack Técnico</h2>
-            <div class="skills-grid">
-                <div class="skill-card"><i class="fab fa-html5"></i> HTML5</div>
-                <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS3</div>
-                <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
-                <div class="skill-card"><i class="fab fa-php"></i> PHP</div>
-                <div class="skill-card"><i class="fab fa-java"></i> Java</div>
-                <div class="skill-card"><i class="fas fa-database"></i> MySQL</div>
-            </div>
-            <div class="soft-skills">
-                <span class="tag">Compromiso</span>
-                <span class="tag">Adaptabilidad</span>
-                <span class="tag">Trabajo en Equipo</span>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-    <h2 class="section-title">Proyectos</h2>
-    <div class="projects-grid">
-        <article class="project-card">
-            <div class="project-image">
-                <img src="https://via.placeholder.com/600x400" alt="Vista previa proyecto">
-                <div class="project-overlay">
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
+            <section id="projects" class="section-compact">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="projects-list">
+                    <article class="project-item-mini">
+                        <div class="project-header">
+                            <h3>Pomodoro Timer Java</h3>
+                            <a href="https://github.com/javimartosdev/Pomodoro-Java" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p>Migración de Python a Java 17. Gestión de estadísticas y audio nativo.</p>
+                    </article>
+                    <article class="project-item-mini">
+                        <div class="project-header">
+                            <h3>Gestión de Inventarios</h3>
+                            <span class="tag-dev">En desarrollo</span>
+                        </div>
+                        <p>Sistema Full-stack en PHP/MySQL para optimización de stock.</p>
+                    </article>
                 </div>
-            </div>
-            <div class="project-info">
-                <h3>Nombre del Proyecto</h3>
-                <p>Descripción breve del reto tecnológico y la solución implementada.</p>
-                <div class="project-tags">
-                    <span>JavaScript</span>
-                    <span>MySQL</span>
-                </div>
-            </div>
-        </article>
+            </section>
 
-        <article class="project-card">
-            <div class="project-image">
-                <img src="https://via.placeholder.com/600x400" alt="Próximamente">
-                <div class="project-overlay">
-                    <span class="coming-soon">En desarrollo...</span>
-                </div>
-            </div>
-            <div class="project-info">
-                <h3>Próximo Proyecto</h3>
-                <p>Actualmente trabajando en una solución full-stack para gestión de inventarios.</p>
-                <div class="project-tags">
-                    <span>PHP</span>
-                    <span>CSS3</span>
-                </div>
-            </div>
-        </article>
-    </div>
-</section>
-
-        <section id="experience" class="section">
-            <h2 class="section-title">Experiencia</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="time-dot"></div>
-                    <div class="time-content">
+            <section id="experience" class="section-compact">
+                <h2 class="section-title">Experiencia</h2>
+                <div class="timeline-compact">
+                    <div class="timeline-item">
                         <h3>Gerente de Supermercado</h3>
                         <p class="company">Mercadona | 2009 — Presente</p>
-                        <p>Gestión de equipos, optimización de procesos y cumplimiento de objetivos estratégicos. Aportando una visión global de negocio y excelencia en el servicio.</p>
+                        <p class="edu-desc">Liderazgo de equipos, optimización de procesos y toma de decisiones estratégicas.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="education" class="section">
-    <h2 class="section-title">Formación</h2>
-    <div class="education-container">
-        <div class="education-item">
-            <div class="edu-header">
-                <h3>Grado Superior en Desarrollo de Aplicaciones Web (DAW)</h3>
-                <span class="edu-date">2024 — 2026</span>
-            </div>
-            <p class="company">DigiTech</p>
-            <p class="edu-desc">Especialización en tecnologías de vanguardia para el desarrollo de software y gestión de datos.</p>
+            </section>
         </div>
 
-        <div class="education-item">
-            <div class="edu-header">
-                <h3>Bachillerato</h3>
-                <span class="edu-date">2005 — 2007</span>
-            </div>
-            <p class="company">IES Fuente Nueva (Almería)</p>
-        </div>
+        <div class="column-side">
+            <section class="section-compact">
+                <h2 class="section-title">Stack Técnico</h2>
+                <div class="skills-tags">
+                    <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
+                    <span>PHP</span> <span>Java</span> <span>MySQL</span>
+                </div>
+            </section>
+
+            <section class="section-compact">
+                <h2 class="section-title">Idiomas</h2>
+                
+                <div class="info-item">
+                    <strong>Inglés:</strong> A2
+                </div>
+            </section>
+
+            <section class="section-compact">
+                <h2 class="section-title">Soft Skills</h2>
+                <div class="skills-tags">
+                    <span>Liderazgo</span> <span>Adaptabilidad</span> <span>Compromiso</span>
+                </div>
+            </section>
+
+            <section id="education" class="section-compact">
+                <h2 class="section-title">Formación</h2>
+                <div class="education-item-mini">
+                    <h3>Desarrollo de Aplicaciones Web (DAW)</h3>
+                    <p>DigiTech | 2024 — 2026</p>
+                </div>
+                <div class="education-item-mini">
+                    <h3>Bachillerato</h3>
+                    <p>IES Fuente Nueva | 2007</p>
+                </div>
+            </section>
+            <section class="section-compact">
+    <h2 class="section-title">Formación Complementaria</h2>
+    
+    <div class="education-item-mini">
+        <h3>Introducción al desarrollo web: HTML y CSS</h3>
+        <p>Google Actívate | Septiembre 2024</p>
+    </div>
+
+    <div class="education-item-mini">
+        <h3>Introducción a la Seguridad Cibernética</h3>
+        <p>Cisco Networking Academy (DIGITECH) | Agosto 2024</p>
+    </div>
+
+    <div class="education-item-mini">
+        <h3>NDG Linux Unhatched (Linux Command Line)</h3>
+        <p>Cisco Networking Academy / NDG | Agosto 2024</p>
     </div>
 </section>
+        </div>
     </main>
 
-    <footer class="container">
-        <p>&copy; 2026 Javier Martos Carrascosa. Diseñado con enfoque minimalista.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+    </body>
 </html>
